@@ -23,7 +23,7 @@ int main(){
     printf("%d %dsec\n", getpid(), one);
     sleep(one); 
     printf("%d finished after %dsec\n", getpid(), one);
-    return one; 
+    exit(one);
   }
   else{
     pid_t p2;
@@ -34,7 +34,7 @@ int main(){
       printf("%d %dsec\n", getpid(), two);
       sleep(two); 
       printf("%d finished after %dsec\n", getpid(), two);
-      return two; 
+      exit(two);
     }
   }
 
